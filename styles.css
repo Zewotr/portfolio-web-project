@@ -1,0 +1,243 @@
+.header {
+  background-color: #36fa88;
+  height: 9vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header-navs {
+  width: 700px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+.nav {
+  justify-self: flex-end;
+  margin-right: 3rem;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  color: rgb(8, 24, 247);
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#intro {
+  margin-top: 30px;
+  align-self: center;
+  width: 500px;
+  height: 400px;
+  min-width: 400px;
+  font-size: 1.2rem;
+}
+
+#intro h2 span {
+  font-weight: 700;
+  color: #36fa88;
+}
+#intro h2 span:hover {
+  color: #072cff;
+  padding: 3px;
+}
+#intro span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(0, 0, 250);
+}
+#intro .btn {
+  font-size: 15px;
+  font-weight: 600;
+  width: fit-content;
+  height: 32px;
+  min-width: fit-content;
+  background-color: #36fa88;
+  color: rgb(5, 21, 248);
+  border-radius: 5px;
+  border: whitesmoke;
+  margin: 10px;
+  display: inline-flex;
+  justify-self: center;
+}
+#intro .btn:hover {
+  background-color: white;
+  color: #00ff6a;
+  margin: 3px;
+  border: 2px solid #072cff;
+}
+#personal-id img {
+  max-width: 50vw;
+  min-width: 400px;
+  width: 540px;
+  height: 600px;
+  flex: 1 1 0;
+  border-radius: 20px;
+  margin: 0 5%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #36fa88;
+  font-size: 20px;
+}
+
+.about h2 {
+  justify-content: center;
+  margin: 20px 0px;
+  width: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 40px;
+}
+.about > div {
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.about div:hover {
+  border-radius: 20px;
+  background-color: white;
+  border: 3px solid rgb(150, 148, 148);
+}
+.about div h3 {
+  justify-self: center;
+  font-weight: 600;
+  font-size: 23px;
+  color: rgb(2, 6, 252);
+}
+.about div h3:hover {
+  color: rgb(0, 0, 0);
+}
+.about li:hover {
+  padding-left: 3px;
+  background-color: darkgray;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.projects > div {
+  width: 400px;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.projects div:hover {
+  border-radius: 20px;
+  color: white;
+  background-color: #00ff6a;
+  border: 3px solid rgb(150, 148, 148);
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.projects div h3 {
+  justify-self: center;
+  color: #072cff;
+  font-weight: 700;
+}
+
+.projects h2 {
+  justify-content: center;
+  margin: 20px 0px;
+  width: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: darkgreen;
+  font-weight: 900;
+  font-size: 40px;
+}
+.projects div h3:hover {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+.read-me {
+  color: white;
+  justify-self: center;
+  font-size: 18px;
+  background-color: #0602fc;
+  border-bottom: 3px solid slategray;
+  border-radius: 25px;
+  height: auto;
+  width: fit-content;
+}
+
+.read-me:hover {
+  background-color: whitesmoke;
+  color: #0602fc;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.follow-me {
+  height: 100px;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow-me div a {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid fuchsia;
+  margin: 0 6px;
+}
+.follow-me a:hover {
+  padding: 3px;
+  margin-bottom: 2px;
+  border: 2px solid #0602fc;
+}
+
+footer {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 680px) {
+  div {
+    display: block;
+    width: 100%;
+  }
+  #intro {
+    margin-top: 70px;
+  }
+  #header-navs {
+    display: block;
+    height: 15px;
+    width: 100%;
+  }
+}
